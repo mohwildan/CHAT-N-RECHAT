@@ -6,7 +6,7 @@ import { BiConfused } from "react-icons/bi";
 
 const Teknologi = () => {
   return (
-    <Box pt="8rem">
+    <Box pt="8rem" id="teknologi">
       <Flex flexDir={{base: "column", md: "row"}}>
         <Box flex={1}>
           <Image src={Image1} />

@@ -6,7 +6,7 @@ import Image3 from "../../public/services/Group 19.png";
 
 const Fiture = () => {
   return (
-    <Box mt="8rem">
+    <Box mt="8rem" id="fitur">
       <Flex align="center" flexDir="column">
         <Heading variant="badge" textAlign="center" mb="1rem">
           NGGAK HARUS SIH SEBENERNYA

@@ -3,7 +3,7 @@ import Arcoditions from "../Arcoditions";
 
 const Faq = () => {
   return (
-    <Container maxW={{ lg: "60%" }} pt="8rem">
+    <Container maxW={{ lg: "60%" }} pt="8rem" id="faq">
       <Arcoditions
         title="Apakah aplikasi ini gratis?"
         desc="Ya gratis dong, masa aplikasi chat aja berbayar sih. Lo kalo nanya yang bener dong. Bayangin aja kalo aplikasi ini berbayar, masa pas chat lo harus bayar setiap karakter. Kalo lo mau bayar mending pake MMS aja dah."

@@ -4,12 +4,29 @@ import {
   Container,
   Flex,
   Heading,
-  Icon,
   Link,
 } from "@chakra-ui/react";
-import { FaBars } from "react-icons/fa";
 
 const Item: string[] = ["Beranda", "Fitur-fitur", "Teknologi", "FAQ"];
+
+const ItemNavbar = [
+  {
+    name: "Beranda",
+    link: "#hero"
+  },
+   {
+    name: "Fitur-fitur",
+    link: "#fitur"
+  },
+   {
+    name: "Teknologi",
+    link: "#teknologi"
+  },
+   {
+    name: "FAQ",
+    link: "#faq"
+  },
+]
 
 const Navbar = () => {
   return (
@@ -18,8 +35,8 @@ const Navbar = () => {
         <Flex justifyContent="space-between" align="center" h="50px">
           <Heading fontSize="1rem">CHAT N’ RECHAT</Heading>
           <Box display={{ base: "none", md: "block" }}>
-            {Item.map((item) => {
-              return <Link mr={9}>{item}</Link>;
+            {ItemNavbar.map((item) => {
+              return <Link mr={9} href={item.link}>{item.name}</Link>;
             })}
           </Box>
           <Button
